@@ -8,9 +8,9 @@ Write styles in JavaScript for simpler component distribution.
 Why JSS?
 --------
 
-When you build generic components you want to ship with some default
-styles. Asking people to include some CSS file into their build or
-prescribe some sort of loader can be cumbersome.
+When you build generic components you often want to ship with some
+default styles. Asking people to include some CSS file into their build
+or prescribe some sort of loader can be cumbersome.
 
 What if all they had to do was call a function to get your styles? No
 loader/bundler prescriptions (like browserify or webpack) or SASS or
@@ -35,8 +35,7 @@ It's just JavaScript™, so you can use variables, etc. Check out the
 example.
 
 If you're shipping a component, you might attach a function to it that
-your consumers call that will inject the CSS, and then they call it
-before initializing their application.
+your consumers call to inject the CSS.
 
 ```js
 var MyAmazingWidget = Embularactymerbone.createComponent({
