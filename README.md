@@ -5,6 +5,14 @@ Write styles in JavaScript for simpler component distribution.
 
 [Demo](http://rpflorence.github.io/js-stylesheet/examples/)
 
+Installation
+------------
+
+`npm install js-stylesheet`
+
+Or download `jss.js` and include it into your app, it works with or
+without common js modules.
+
 Why JSS?
 --------
 
