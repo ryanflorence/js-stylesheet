@@ -3,6 +3,8 @@ JavaScript Stylesheet
 
 Write styles in JavaScript for simpler component distribution.
 
+[Demo](http://rpflorence.github.io/js-stylesheet/examples/)
+
 Why JSS?
 --------
 
