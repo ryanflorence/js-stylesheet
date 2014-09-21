@@ -1,0 +1,14 @@
+{
+  "name": "js-stylesheet",
+  "version": "0.0.0",
+  "description": "Write styles in JavaScript for simpler component distribution.",
+  "main": "jss.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Florence <rpflorence@gmail.com>",
+  "license": "MIT"
+}
