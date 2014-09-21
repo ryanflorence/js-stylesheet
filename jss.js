@@ -1,9 +1,9 @@
 !(function() {
-  function jss(blocks, now) {
+  function jss(blocks) {
     var css = [];
     for (var block in blocks)
       css.push(createStyleBlock(block, blocks[block]));
-    injectCSS(css, now);
+    injectCSS(css);
   }
 
   function createStyleBlock(selector, rules) {
@@ -17,7 +17,7 @@
     return css.join('\n');
   }
 
-  function injectCSS(css, doItNow) {
+  function injectCSS(css) {
     var style = document.getElementById('jss-styles');
     if (!style) {
       style = document.createElement('style');
