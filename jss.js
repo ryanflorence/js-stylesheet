@@ -22,6 +22,7 @@
     if (!style) {
       style = document.createElement('style');
       style.setAttribute('id', 'jss-styles');
+      style.setAttribute('type', 'text/css');
       var head = document.getElementsByTagName('head')[0];
       head.insertBefore(style, head.firstChild);
     }
@@ -35,4 +36,3 @@
     window.jss = jss;
 
 })();
-
