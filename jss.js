@@ -18,6 +18,7 @@
   }
 
   function injectCSS(css) {
+    css = css.join('\n\n');
     var style = document.getElementById('jss-styles');
     if (!style) {
       style = document.createElement('style');
@@ -26,8 +27,12 @@
       var head = document.getElementsByTagName('head')[0];
       head.insertBefore(style, head.firstChild);
     }
-    var node = document.createTextNode(css.join('\n\n'));
-    style.appendChild(node);
+    if (style.styleSheet) {
+      style.styleSheet.cssText = css;
+    } else {
+      var node = document.createTextNode(css);
+      style.appendChild(node);
+    }
   }
 
   if (typeof exports === 'object')
