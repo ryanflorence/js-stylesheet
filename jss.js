@@ -18,15 +18,17 @@
   }
 
   function injectCSS(css) {
-    var style = document.getElementById('jss-styles');
-    if (!style) {
-      style = document.createElement('style');
-      style.setAttribute('id', 'jss-styles');
-      var head = document.getElementsByTagName('head')[0];
-      head.insertBefore(style, head.firstChild);
+    if (typeof document !== "undefined") {
+      var style = document.getElementById('jss-styles');
+      if (!style) {
+        style = document.createElement('style');
+        style.setAttribute('id', 'jss-styles');
+        var head = document.getElementsByTagName('head')[0];
+        head.insertBefore(style, head.firstChild);
+      }
+      var node = document.createTextNode(css.join('\n\n'));
+      style.appendChild(node);
     }
-    var node = document.createTextNode(css.join('\n\n'));
-    style.appendChild(node);
   }
 
   if (typeof exports === 'object')
