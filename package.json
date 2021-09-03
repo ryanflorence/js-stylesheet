@@ -6,6 +6,10 @@
   "directories": {
     "example": "examples"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanflorence/js-stylesheet.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified so it PASSED!\" && exit 0"
   },
